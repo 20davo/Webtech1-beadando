@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBDL Converter</title>
+    <link rel="stylesheet" href="assets/css/converter_styles.css">
+    <link rel="stylesheet" href="assets/css/codemirror.css">
+    <link rel="stylesheet" href="assets/css/xq-light.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <ul>
+            <li>
+                <a class="iconLi" href="fbdl_converter.html" style="background-color: #003971;"><img class="icon" src="assets/images/icon.png" alt="Icon"></a>
+            </li>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="services.html">Szolgáltatások</a></li>
+            <li><a href="gallery.html">Galéria</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+            <li style="float: right"><a class="active" href="fbdl_converter.html">FBDL Converter</a></li>
+    </ul>
+
+
+    <main class="main">
+        <h1>FBDL Converter</h1>
+        <p>Fast and easy FBDL to C code conversion.</p>
+        <form id="fbdlForm">
+            <div id="converterSection">
+                <div id="inputSection">
+                    <textarea id="codearea">
+universe "distance"
+    "close" 0 0
+    "mid" 5 2
+    "far" 10 10
+end
+
+universe "range"
+    "close" 0 0
+    "mid" 5 2
+    "far" 10 10
+end
+
+universe "speed"
+    "low" 0 0
+    "high" 10 10
+end
+
+rulebase "speed"
+    rule
+        "low" when "distance" is "close" and "range" is "close"
+    end
+    rule
+        "high" when "distance" is "far" and "range" is "mid"
+    end
+end
+                    </textarea>
+                </div>
+                <div id="buttonSection">
+                    <button type="submit" id="convertButton">Convert</button>
+                    <button type="button" id="copyButton">Copy</button>
+                </div>
+                <div id="outputSection">
+                    <pre id="resultOutput"></pre>
+                </div>
+                <div class="simulation">
+                    <h2 style="margin-left: 20px;">Simulation</h2>
+                    <div id="simulationSection">
+                        <div id="sliders"></div>
+                        <div id="indicators"></div>
+                    </div>
+                </div>
+            </div>          
+        </form>            
+    </main>
+    <footer>
+        <p>&copy; 2024 FBDL Converter. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/parser.js"></script>
+    <script src="assets/js/simulator.js"></script>
+    <script src="assets/js/tokenizer.js"></script>
+    <script src="assets/js/universe.js"></script>
+    <script src="assets/js/codemirror.js"></script>
+    <script src="assets/js/ruby.js"></script>
+
+    <script src="assets/js/converter.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+</body>
+</html>

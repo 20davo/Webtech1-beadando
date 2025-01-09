@@ -1,0 +1,161 @@
+/* Általános stílusok */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+  
+/* Navigációs menü stílusai */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #003971;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: #025994;
+  border-radius: 12px;
+}
+
+.icon {
+  margin-right: 15px;
+  width: 46px;
+  height: 46px;
+}
+
+.iconLi{
+  padding: 0;
+}
+
+/* Formázás az oldal fő részéhez */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Címsor stílusok */
+h1, h2 {
+  color: #007acc;
+}
+
+/* Formák, gombok, és egyéb bemeneti elemek stílusai */
+form {
+  margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Gomb stílusok */
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* Szebb szövegdobozok */
+textarea {
+  height: 150px;
+}
+
+/* Fájl feltöltési mező */
+input[type="file"] {
+  padding: 5px;
+}
+
+/* Eredmény doboz */
+pre {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+}
+
+/* Táblázat formázás */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007acc;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003971;
+  color: white;
+  margin-top: 40px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Egyszerűbb reszponzivitás */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
