@@ -37,16 +37,6 @@ li a:hover:not(.active) {
   font-size: 18px;
 }
 
-.icon {
-  margin-right: 15px;
-  width: 46px;
-  height: 46px;
-}
-
-.iconLi{
-  padding: 0;
-}
-
 main {
   max-width: 600px;
   margin: 20px auto;
