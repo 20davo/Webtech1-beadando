@@ -34,8 +34,9 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #f1f1f1;
-  color: #025994;
-  border-radius: 12px;
+  color: #003971;
+  border-radius: 2px;
+  font-size: 18px;
 }
 
 .icon {
@@ -50,7 +51,7 @@ li a:hover:not(.active) {
 
 /* Címsor stílusok */
 h1, h2 {
-  color: #007acc;
+
 }
 
 /* Formák, gombok, és egyéb bemeneti elemek stílusai */
@@ -134,13 +135,15 @@ footer p {
   font-size: 14px;
 }
 
-footer .social-icons a {
+.footer-link {
   color: white;
-  margin: 0 10px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}  
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
 
 /* Egyszerűbb reszponzivitás */
 @media (max-width: 768px) {

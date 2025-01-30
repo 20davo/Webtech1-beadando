@@ -21,43 +21,76 @@
   </nav>
   
   <main>
-    <h1>Üdvözöllek az FBDL Converter weboldalán!</h1>
-    <p>Ez az oldal bemutatja, hogyan lehet az FBDL nyelvet egyszerűen és hatékonyan C kódra konvertálni.</p>
-
-    <h2>Fő előnyök</h2>
+    <h1>Üdvözlöjük az FBDL Converter weboldalán!</h1>
+    <p>Ez az oldal bemutatja, hogyan alakítható át egy <b>FBDL (Fuzzy Beahavior Description Language)</b> szemantikájú kód <b>C </b>kóddá egy egyszerű, <i>JavaScript</i> -alapú konvertáló program segítségével. <br>
+      A konverter fő célja az <b>FRI (Fuzzy Rule Interpolation)</b> rendszerrel való kompatibilitás biztosítása. </p>
+    <hr>
+    <h2>Mi is az az FBDL?</h2>
+    <p>Az FBDL (Fuzzy Behavior Description Language) egy <span style="font-style: italic; font-weight: bold;">deklaratív</span> programozási nyelv, amelyet a szabály-alapú (fuzzy rule-based) viselkedésmodellek létrehozására fejlesztettek ki. Az FBDL segítségével könnyedén definiálhatók olyan viselkedés-alapú rendszerek (BBS – Behavior-Based Systems), amelyek képesek komplex, folyamatosan változó környezetekhez alkalmazkodni. <br><br>
+      A nyelv kifejezetten az FRI (Fuzzy Rule Interpolation) rendszerrel való kompatibilitásra lett tervezve, így az ebben a nyelvben írt kód közvetlenül futtatható egy beépített fuzzy állapotgépen (FRI Behavior Engine). Ennek köszönhetően a rendszer működése rugalmasan módosítható, anélkül, hogy a vezérlőszoftver egészét újra kellene programozni.</p>
+    <h3>Az FBDL és más nyelvek összehasonlítása</h3>
     <table>
       <tr>
-        <th>Előny</th>
-        <th>Leírás</th>
+        <th>Tulajdonság</td>
+        <th>FBDL</td>
+        <th>Python</td>
+        <th>C</td>
       </tr>
       <tr>
-        <td>Egyszerűség</td>
-        <td>Könnyen érthető szabályok</td>
+        <td>Szintaxis</td>
+        <td>Deklaratív</td>
+        <td>Imperatív</td>
+        <td>Imperatív</td>
       </tr>
       <tr>
-        <td>Hatékonyság</td>
-        <td>Gyors feldolgozás és fordítás</td>
+        <td>Emberi olvashatóság</td>
+        <td>Magas</td>
+        <td>Magas</td>
+        <td>Közepes</td>
       </tr>
       <tr>
-        <td>Rugalmasság</td>
-        <td>Szabályok könnyű bővítése</td>
+        <td>Beágyazott rendszerekben használható</td>
+        <td>Igen</td>
+        <td>Korlátozott</td>
+        <td>Igen</td>
+      </tr>
+      <tr>
+        <td>FRI-vel kompatibilis</td>
+        <td>Igen</td>
+        <td>Nem</td>
+        <td>Nem</td>
       </tr>
     </table>
+    
+    <hr>
 
-    <h2>Miért érdemes használni az FBDL-t?</h2>
+    <h2>A konverter föbb funkciói</h2>
+
     <ul>
-      <li>Szabályalapú nyelv.</li>
-      <li>Könnyen használható szintaxis.</li>
-      <li>Gyors konverzió C nyelvre.</li>
+      <li>Az FBDL input szemantika szerinti színezése</li>
+      <li>Beépített szimuláció a szabályrendszer működésének ellenőrzésére</li>
+      <li>Könnyen olvasható, deklaratív szintaxis</li>
+      <li>A generált C kód FRI (Fuzzy Rule Interpolation) kompatibilitása</li>
+      <li>Böngészőben futtatható JavaScript-alapú (frontend) megoldás</li>
+      <li>Automatikus C kód generálás a létrehozott fuzzy szabályok alapján</li>
     </ul>
+      
+    <hr>
 
-    <h3>Képek</h3>
-    <img src="assets/images/example1.jpg" alt="FBDL konverter működése" width="300">
-    <img src="assets/images/example2.jpg" alt="Példa szabályok" width="300">
+    <h2>A konverter használata</h2>
+    <ol>
+      <li>Másolja be a kívánt FBDL kódot a szövegdobozba.</li>
+      <li>Kattintson a <span style="font-weight: bold;">convert</span> gombra a C kód generálásához.</li>
+      <li>A <span style="font-weight: bold;">copy</span> gomb segítségével vágólapra mentheti a generált kódot.</li>
+      <li>A szimulációs résznél a paraméterek módosításával teszteleni tudja a viselkedést.</li>
+      <li>Használja a kódot FRI alapú rendszerekhez.</li>
+    </ol>
+
+    <a href="fbdl_converter.html"><img src="assets/images/icon.png" alt="Converter-logo" width="150" height="150"></a>
+  
   </main>
-
   <footer>
-    <p>&copy; 2024 FBDL Converter. Minden jog fenntartva.</p>
+    <p>&copy; 2024 FBDL Converter. Minden jog fenntartva. | <a href="https://github.com/20davo/FBDL-converter/" class="footer-link">GitHub</a></p>
   </footer>
 </body>
 </html>

@@ -1,4 +1,3 @@
-/* Általános stílusok */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,8 +5,7 @@ body {
   background-color: #f5f5f5;
   color: #333;
 }
-  
-/* Navigációs menü stílusai */
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,8 +32,9 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #f1f1f1;
-  color: #025994;
-  border-radius: 12px;
+  color: #003971;
+  border-radius: 2px;
+  font-size: 18px;
 }
 
 .icon {
@@ -48,88 +47,75 @@ li a:hover:not(.active) {
   padding: 0;
 }
 
-/* Formázás az oldal fő részéhez */
 main {
-  max-width: 900px;
+  max-width: 600px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 50px 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Címsor stílusok */
-h1, h2 {
-  color: #007acc;
+h1{
+  text-align: center;
+  margin: 0;
 }
 
-/* Formák, gombok, és egyéb bemeneti elemek stílusai */
 form {
-  margin-bottom: 20px;
+  max-width: 550px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
-input, select, textarea, button {
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
   border-radius: 5px;
   border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-size: 16px;
 }
 
-/* Gomb stílusok */
+input:focus, textarea:focus {
+  border: 1px solid black;
+}
+
+input[type="color"] {
+  max-width: 30px;
+}
+
+input[type="date"] {
+  max-width: 140px;
+}
+
 button {
-  background-color: #007acc;
+  background-color: #003971;
   color: white;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
+  max-width: 200px;
+  margin-top: 50px;
+  width: 90%;
+  padding: 10px 10px;
+  text-align: center;
 }
 
 button:hover {
-  background-color: #005f99;
+  background-color: #02274c;
 }
 
-/* Szebb szövegdobozok */
-textarea {
-  height: 150px;
-}
-
-/* Fájl feltöltési mező */
-input[type="file"] {
-  padding: 5px;
-}
-
-/* Eredmény doboz */
-pre {
-  background-color: #f0f0f0;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  white-space: pre-wrap;
-}
-
-/* Táblázat formázás */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #007acc;
-  color: white;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -144,15 +130,16 @@ footer p {
   font-size: 14px;
 }
 
-footer .social-icons a {
+.footer-link {
   color: white;
-  margin: 0 10px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
 }
 
-/* Egyszerűbb reszponzivitás */
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   nav ul li {
       display: block;

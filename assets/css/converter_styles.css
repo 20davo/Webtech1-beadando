@@ -1,4 +1,3 @@
-/* General */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
@@ -6,8 +5,6 @@ body {
   background: linear-gradient(to bottom, #f3f4f6, #e4e5e9);
   color: #333;
 }
-
-/* Navigation menu */
 
 ul {
   list-style-type: none;
@@ -35,8 +32,9 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #f1f1f1;
-  color: #025994;
-  border-radius: 12px;
+  color: #003971;
+  border-radius: 2px;
+  font-size: 18px;
 }
 
 .icon {
@@ -49,7 +47,6 @@ li a:hover:not(.active) {
   padding: 0;
 }
 
-/* main */
 main h1 {
   font-size: 2rem;
   text-align: center;
@@ -63,7 +60,6 @@ main p {
   font-style: oblique;
 }
 
-/* Converter */
 #converterSection {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -106,7 +102,6 @@ main p {
   overflow-y: auto;
 }
 
-/* Buttons */
 #buttonSection {
   grid-column: 2;
   display: flex;
@@ -129,13 +124,13 @@ button {
 button:hover {
   background: #025994;
   transform: scale(1.05);
+  font-weight: bold;
 }
 
 button:active {
   transform: scale(0.95);
 }
 
-/* Simulation */
 .simulation {
   width: 450px;
   padding: 10px;
@@ -171,7 +166,6 @@ div.slider {
   border: none !important;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -186,11 +180,13 @@ footer p {
   font-size: 14px;
 }
 
-footer .social-icons a {
+.footer-link {
   color: white;
-  margin: 0 10px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 

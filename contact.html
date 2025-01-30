@@ -21,34 +21,58 @@
   </nav>
 
   <main>
-    <h1>Kapcsolatfelvétel</h1>
+    <h1>Írjon nekünk!</h1>
     <form id="contactForm">
       <label for="name">Név:</label>
       <input type="text" id="name" name="name" required>
-      
+
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" required>
-      
+
       <label for="message">Üzenet:</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-      <label for="color">Válassz egy színt:</label>
-      <input type="color" id="color" name="color">
+      <table style="padding-top: 20px;">
+        <tr>
+          <td>
+            <label for="color">Kedvenc szín:</label>    
+          </td>
+          <td style="padding-right: 30px;">
+            <input type="color" id="color" name="color">
+          </td>
+          <td>
+            <label for="date">Születési dátum:</label>
+          </td>
+          <td>
+            <input type="date" id="date" name="date">
+          </td>
+        </tr>
+      </table>
 
-      <label for="date">Dátum választás:</label>
-      <input type="date" id="date" name="date">
+      <table>
+        <tr>
+          <td><label>Feliratkozás a hírlevélre</label></td>
+          <td><input type="checkbox" id="subscribe"></td>
+        </tr>
+        <tr>
+          <td> <label>Nő</label></td>
+          <td><input type="radio" name="gender" required></td>
+        </tr>
+        <tr>
+          <td><label>Férfi</label></td>
+          <td><input type="radio" name="gender" required></td>
+        </tr>
+      </table>
       
-      <label><input type="checkbox" id="subscribe" name="subscribe"> Feliratkozás a hírlevélre</label>
-      
-      <label><input type="radio" name="gender" value="male"> Férfi</label>
-      <label><input type="radio" name="gender" value="female"> Nő</label>
-      
-      <button type="submit">Küldés</button>
+      <div>
+        <button type="submit">Küldés</button>
+      </div>
+
     </form>
   </main>
 
   <footer>
-    <p>&copy; 2024 FBDL Converter. Minden jog fenntartva.</p>
+    <p>&copy; 2024 FBDL Converter. Minden jog fenntartva. | <a href="https://github.com/20davo/FBDL-converter/" class="footer-link">GitHub</a></p>
   </footer>
 </body>
 </html>
