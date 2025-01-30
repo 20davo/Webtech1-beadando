@@ -9,6 +9,8 @@ Neptun kód: P4QKJP
 
 
 
+---
+
 ## 2. HTML elemei és CSS stílusai
 
 
@@ -35,7 +37,7 @@ Neptun kód: P4QKJP
 
 ---
 
-## 3. JavaScript és jQuery Funkcionalitás
+## 3. JavaScript
 
 
 
