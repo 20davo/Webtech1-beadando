@@ -91,7 +91,6 @@ footer p {
   text-decoration: underline;
 }
 
-/* Egyszerűbb reszponzivitás */
 @media (max-width: 768px) {
   nav ul li {
       display: block;

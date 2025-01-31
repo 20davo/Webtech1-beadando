@@ -47,23 +47,6 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #007acc;
-  color: white;
-}
-
 footer {
   text-align: center;
   padding: 20px;
@@ -88,7 +71,6 @@ footer p {
   text-decoration: underline;
 }
 
-/* Egyszerűbb reszponzivitás */
 @media (max-width: 768px) {
   nav ul li {
       display: block;
