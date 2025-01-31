@@ -188,4 +188,4 @@ A konvertálás során:
 
 Az oldalak tervezésénél fontosnak tartottam a modern és egységes kinézetet, valamint a felhasználóközpontú elrendezést. Az oldalak sajnos nem teljesen reszponzívnak, de igyekeztem annak is megfelelni, valamilyen szinten.
 
-A projekt eredeti dokumentációja (szakdolgozat gitrepója) és kódjai megtalálhatóak az alábbi [linken](http://fbdlconverter.nhely.hu/). 
+A projekt eredeti dokumentációja (szakdolgozat gitrepója) és kódjai megtalálhatóak az alábbi [linken](https://github.com/20davo/FBDL-converter). 
